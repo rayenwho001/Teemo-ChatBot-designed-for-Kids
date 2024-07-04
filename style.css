@@ -1,0 +1,67 @@
+/* Reset default margin and padding */
+* {
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    background-color: #c11d1d5e;
+   
+    background-image: url('back.jpg');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center;
+    padding: 20px;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Ensures the video is behind other content */
+    background-size: auto;
+}
+
+/* Chatbot container */
+.chatbot-container {
+    max-width: 100px;
+    margin-bottom: 100px;
+    margin: 0 auto;
+    background-color: #020aff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden;
+    border: 1px solid #ccc; /* Optional: Add a border for better visual separation */
+}
+
+/* Chatbot iframe */
+.chatbot-container iframe {
+    width: 100%; /* Ensure iframe takes full width of container */
+    height: 100px; /* Adjust height as needed */
+    border: none;
+}
+.tracking-in-contract {
+	animation: tracking-in-contract 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
+}
+
+ @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  
